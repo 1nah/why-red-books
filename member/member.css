@@ -4,7 +4,8 @@
 
 #member {
   width: 1280px;
-  height: 900px;
+  height: 100vh;
+  min-height: 700px;
   position: relative;
   margin: 0 auto;
 }
@@ -54,6 +55,11 @@
   -webkit-transition: 0.8s;
   transition: 0.8s;
   position: relative;
+}
+
+#slide li.on .front:hover {
+  -webkit-transform: rotateY(-15deg);
+          transform: rotateY(-15deg);
 }
 
 .back {
@@ -133,11 +139,11 @@
 
 #control {
   width: 560px;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #arrow img {
@@ -147,6 +153,7 @@
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-top: 40px;
 }
 
 #arrow img:first-child {

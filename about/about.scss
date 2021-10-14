@@ -4,28 +4,291 @@ $black: #3E3E3E;
 $red: #B31C33;
 $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
 
+// 웅장한 시작
 #intro{
     width: 1280px;
     height: 1000px; // 임시 높이
     margin: 0 auto;
     background-color: aqua;
 }
+
+// 어째서적은
 #about_info{
     position: relative;
     width: 100%;
-    height: 3000px;
-    background: linear-gradient($red, #ffffff);
+    height: 4000px;
+    background: linear-gradient($red 40%, #ffffff 80%);
+    padding-top: 500px;
 }
+
 #about_info_inner{
-    width: 1280px;
-    height: 900px;
+    width: fit-content;
+    height: fit-content;
     position: sticky;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
 #about_info_inner>*{
     text-align: center;
     color: white;
 }
 
+p.title{
+    font-weight: 900;
+    font-size: 100px;
+    width: fit-content;
+    height: 180px;
+    margin: 0 auto;
+}
+#about_info h4{
+    transform: translateY(30px);
+    font-weight: 300;
+    opacity: 0;
+    transition: 1s;
+}
+#about_info h4.on{
+    transform: translateY(0px);
+    opacity: 1;
+}
+#about_info h4 span{
+    display: inline-block;
+    width: 74px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22px;
+}
+#about_info h4.on span{
+    transition: 0.3s;
+    transition-delay: 1s;
+    font-weight: 600;
+    color: white;
+}
+
+// 프로젝트
+#about_project{
+    width: 100%;
+    height: 6500px;
+}
+#about_project_inner{
+    width: 1280px;
+    height: 6500px;
+    margin: 0 auto;
+    position: relative;
+}
+#about_project .title{
+    color: $red;
+    position: sticky;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    margin-bottom: 500px;
+    // text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    // 글자가 잘 안보여
+}
+#about_project ul{
+    position: sticky;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 580px;
+    width: 6000px;
+    margin-left: 2000px;
+}
+#about_project li{
+    float: left;
+}
+#about_project li:hover img{
+    transform: scale(1.05);
+}
+#about_project li a{
+    width: 400px;
+    height: 580px;
+    margin: 0 20px;
+}
+#about_project h4{
+    width: 400px;
+    text-align: left;
+    margin: 20px 0 0 20px;
+    color: $red;
+}
+#about_project img{
+    width: 400px;
+    transition: 0.3s;
+}
+
+// 기타등등
+#about_etc{
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+#about_etc ul{
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#about_etc li{
+    position: absolute;
+}
+#about_etc li img{
+    max-width: 100%;
+}
+#about_etc li:nth-child(1){
+    width: 420px;
+    height: 410px;
+    top: 70px;
+    left: 160px;
+    transform: rotate(15deg);
+    animation : move 2s ease-in-out infinite normal;
+    z-index: 9;
+}
+#about_etc li:nth-child(2){
+    width: 520px;
+    height: 502px;
+    top: 290px;
+    left: 400px;
+    transform: rotate(20deg);
+    animation : move 2.3s ease-in-out infinite normal;
+}
+#about_etc li:nth-child(3){
+    width: 500px;
+    height: 830px;
+    top: 40px;
+    left: 810px;
+    transform: rotate(-14deg);
+    animation : move 2.1s ease-in-out infinite normal;
+    z-index: -1;
+}
+#about_etc li:nth-child(4){
+    width: 600px;
+    height: 400px;
+    top: 105px;
+    left: 1165px;
+    transform: rotate(9deg);
+    animation : move 2.4s ease-in-out infinite normal;
+    z-index: -2;
+}
+#about_etc li:nth-child(5){
+    width: 283px;
+    height: 287px;
+    top: 560px;
+    left: 1204px;
+    transform: rotate(-45deg);
+    animation : move 2.2s ease-in-out infinite normal;
+}
+#about_etc li:nth-child(6){
+    width: 135px;
+    height: 135px;
+    top: 700px;
+    left: 1540px;
+    animation : move 2s ease-in-out infinite normal;
+}
+#about_etc li:nth-child(7){
+    width: 70px;
+    height: 70px;
+    top: 600px;
+    left: 183px;
+    animation : move 2.3s ease-in-out infinite normal;
+}
+#about_etc li:nth-child(8){
+    width: 70px;
+    height: 70px;
+    top: 100px;
+    left: 712px;
+    animation : move 2.2s ease-in-out infinite normal;
+}
+#about_etc li:nth-child(9){
+    width: 70px;
+    height: 70px;
+    top: 566px;
+    left: 1640px;
+    animation : move 2.1s ease-in-out infinite normal;
+}
+@keyframes move{
+    50%{
+        margin-top: -20px;
+    }
+}
+#about_etc li:nth-child(2):hover,
+#about_etc li:nth-child(3):hover,
+#about_etc li:nth-child(4):hover{
+    animation-play-state: paused;
+    filter: invert(100%);
+}
+#about_etc p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+#about_etc p span{
+    display: block;
+    font-weight: 600;
+    font-size: 50px;
+}
+#earth, #earth span{
+    color: white;
+}
+#goods, #goods, span{
+    color: $red;
+}
+// contact
+#about_contact{
+    width: 1280px;
+    height: 900px;
+    margin: 0 auto;
+}
+#about_contact h4{
+    text-align: center;
+    position: relative;
+    top: 400px;
+}
+#about_contact ul{
+    width: fit-content;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    top: 440px;
+    transition: 0.3s;
+}
+#about_contact li{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: $red;
+    margin: 0 -10px;
+    transition: 0.5s;
+}
+#about_contact h1{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    z-index: 9;
+}
+#about_contact ul:hover li{
+    border-radius: 0px;
+    margin: 0 -25px;
+}
+#about_contact ul:hover li:first-child{
+    border-radius: 80px 0 0 80px;
+}
+#about_contact ul:hover li:last-child{
+    border-radius: 0 80px 80px 0;
+}
+#about_contact ul:hover li:nth-child(2),
+#about_contact ul:hover li:nth-child(6){
+    border-radius: 80px;
+}

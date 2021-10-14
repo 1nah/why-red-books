@@ -9,7 +9,8 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 #member{
     width: 1280px;
-    height: 900px;
+    height: 100vh;
+    min-height: 700px;
     position: relative;
     margin: 0 auto;
 }
@@ -52,6 +53,9 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
     background-color: white;
     transition: 0.8s;
     position: relative;
+}
+#slide li.on .front:hover{
+    transform: rotateY(-15deg);
 }
 .back{
     border: 1px solid $red;
@@ -119,10 +123,10 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
 
 #control{
     width: 560px;
-    position: relative;
-    top: 30px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate( -50%, -50%);
 }
 
 #arrow img{
@@ -131,6 +135,7 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
     float: left;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 40px;
 }
 #arrow img:first-child{
     margin-right: 500px;
