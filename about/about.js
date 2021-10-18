@@ -68,7 +68,9 @@ $(function(){
 
         h=$(window).scrollTop();
 
-        if(h >= $("#about_info").offset().top){
+        if(h >= $("#about_info").offset().top && h < $("#about_project").offset().top){
+
+            $("#menu_btn").addClass("white");
 
             if( status1 == true ){
                 type_control1 = setInterval(typing1,150);
@@ -77,19 +79,19 @@ $(function(){
             
             if(h >= $("#about_info").offset().top+300){
                 $("#about_info h4").addClass("on");
-            }else{
-                $("#about_info h4").removeClass("on");
             }
 
+        }else{
+            $("#menu_btn").removeClass("white");
+            $("#about_info h4").removeClass("on");
         }
         
-        if(h >= $("#about_project").offset().top){
+        if(h >= $("#about_project").offset().top && h < $("#about_etc").offset().top){
 
             if( status2 == true ){
                 type_control2 = setInterval(typing2,150);
             }
             status2 = false;
-
 
             var dis = 2000+($("#about_project").offset().top)-h;
             console.log(dis);

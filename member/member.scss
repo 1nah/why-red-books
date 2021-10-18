@@ -87,6 +87,7 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
 .front>img{
     width: 300px;
     height: 230px;
+    margin-top: -1px;
     margin-bottom: 20px;
     margin-left: -1px;
 }
@@ -127,6 +128,7 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
+    height: 1px;
 }
 
 #arrow img{
@@ -135,7 +137,6 @@ $shadow : 1px 1px 5px rgba(0, 0, 0, 0.1);
     float: left;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 40px;
 }
 #arrow img:first-child{
     margin-right: 500px;

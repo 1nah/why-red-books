@@ -2,7 +2,6 @@
 
 $black: #3E3E3E;
 $red: #B31C33;
-$cyan: #4ce3cc;
 
 *{
     margin: 0;
@@ -12,6 +11,9 @@ $cyan: #4ce3cc;
     font-size: 16px;
     font-weight: 400;
     color: $black;
+}
+body, html{
+    scroll-behavior: smooth;
 }
 body{
     line-height: 1.6;
@@ -105,6 +107,7 @@ header{
     width: 6px;
     height: 30px;
     background-color: $red;
+    transition: 0.3s;
 }
 #menu_btn.on ul{
     transition-delay: 0s;
@@ -120,9 +123,18 @@ header{
     cursor: pointer;
     transition-delay: 0s;
 }
+#menu_btn path{
+    transition: 0.3s;
+}
 #menu_btn.on svg{
     transition-delay: 0.2s;
     transform: translateX(-50%) scaleX(1);
+}
+#menu_btn.white li{
+    background-color: white;
+}
+#menu_btn.white path{
+   fill:white;
 }
 
 // menu

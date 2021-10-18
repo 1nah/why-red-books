@@ -9,6 +9,10 @@
   color: #3E3E3E;
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.6;
 }
@@ -120,6 +124,8 @@ header {
   width: 6px;
   height: 30px;
   background-color: #B31C33;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #menu_btn.on ul {
@@ -143,11 +149,24 @@ header {
           transition-delay: 0s;
 }
 
+#menu_btn path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #menu_btn.on svg {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
+}
+
+#menu_btn.white li {
+  background-color: white;
+}
+
+#menu_btn.white path {
+  fill: white;
 }
 
 #main_menu {
