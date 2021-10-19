@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="../images/thumbnail.png"/>
     <title>출판사 어째서적 | PROJECT</title>
 
      <!-- font  -->
@@ -20,10 +20,27 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="../script/default.js"></script>
      <script src="project.js"></script>
+     <script src="shelf.js"></script>
      
      <!-- favicon -->
      <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-
+     <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div id="wrapper">
@@ -193,8 +210,8 @@
                                         환경 순환의 모든 것을 리뷰합니다. <br>
                                         환경 보호를 넘어선 선순환의 지속을 꿈꿉니다.                                    
                                    </p>
-                                   <a href="https://tumblbug.com/azzeonzi03?ref=discover" target="_blank">
-                                        <button>자세히</button>
+                                   <a href="#none" >
+                                        <button class="m1">자세히</button>
                                     </a>
                                 </div>
                                <div class="mockup">
@@ -208,8 +225,8 @@
                                     보내기 어려웠던 화라는 감정을 <br>
                                     마음과 감정을 글로써 표현하는 편지로 보냅니다.   
                                    </p>
-                                   <a href="https://tumblbug.com/azzeonzi02?ref=discover" target="_blank">
-                                        <button>자세히</button>
+                                   <a href="#none">
+                                        <button class="m2">자세히</button>
                                     </a>
                                 </div>
                                <div class="mockup">
@@ -223,8 +240,8 @@
                                     살만하다고 말하기 힘든 이 시대에서 <br>
                                     생존을 위해 발버둥 친 체험 수기를 기록합니다.
                                    </p>
-                                   <a href="https://tumblbug.com/azzeonzi01?ref=discover" target="_blank">
-                                        <button>자세히</button>
+                                   <a href="#none">
+                                        <button class="m3">자세히</button>
                                     </a>
                                 </div>
                                <div class="mockup">
@@ -261,12 +278,12 @@
                                         너무 죽고 싶었고 가끔은 살아도 되지 않을까 <br>
                                         고민했었던 그 때와 지금의 나를 담았습니다.
                                     </p><br>
-                                    <a href="https://tumblbug.com/whyredbook02?ref=discover" target="_blank">
-                                            <button>자세히</button>
+                                    <a href="#none">
+                                            <button class="b1">자세히</button>
                                         </a>
                                     </div>
                                 <div class="mockup">
-                                    <img src="images/b1.png" alt="magazine">
+                                    <img src="images/b1.png" alt="book">
                                 </div>
                             </li>
                             <li>
@@ -276,18 +293,185 @@
                                         기억하고 싶은 순간을 시로 씁니다. <br>
                                         순간을 기억하게 하는 출발점이 되고 싶습니다.
                                     </p><br>
-                                    <a href="https://tumblbug.com/whyredbook01?ref=discover" target="_blank">
-                                            <button>자세히</button>
+                                    <a href="#none" >
+                                            <button class="b2">자세히</button>
                                         </a>
                                     </div>
                                 <div class="mockup">
-                                    <img src="images/b2.png" alt="magazine">
+                                    <img src="images/b2.png" alt="book">
                                 </div>
                             </li>
                         </ul>
                     </div>
                </li>
            </ul>
+           <div id="popup_info">
+               <div id="popup_close">
+                   <img src="images/close.png" alt="close">
+               </div>
+               <ul>
+                   <li class="m1">
+                        <br>
+                        <h5>어쩐지 3호 ㅣ 어쩐지, 돌겠네 </h5>
+                        <br>
+                        필환경 시대에 선 잡지는
+                        수천장의 종이를 사용하면서도,
+                        쓰이지 못할 수도 있는 리워드를 만들어 팔면서도,
+                        택배 배송 과정에서 얼마만큼의 탄소가 배출되는지 알면서도,
+                        계속 출간되어야 할까요?
+                        <br><br>
+                        어쩐지 3호는 이 의문으로부터 시작한 기획입니다. 
+                        "어쩐지, 돌겠네"라는 3호의 잡지명은 
+                        스스로 던진 질문에 대한 미천한 인간의 대답이기도 합니다.
+                        돌겠습니다. 
+                        잡지의 미래도, 인간의 미래도, 환경의 미래도 
+                        어느 하나 아름답겠다 단언할 수 없어서.
+                        <br><br>
+                        그럼에도 우리는 
+                        환경 담론을 이어갈 오프라인 콘텐츠가 지속되어야 한다고 생각했습니다. 
+                        어째서적은 제작에 드는 환경 비용을 더 줄이고, 
+                        전할 수 있는 가치를 최대한 높여 
+                        찍어낼 가치가 있는 잡지를 만들기로 하였습니다. 
+                        이를 위해 삶의 지속가능성에 집중했던 기존 잡지의 주제를 전환하여 
+                        환경의 지속가능성에 포커스를 맞췄습니다. 
+                        또, 주제 선정부터 기사 작성까지 반복적인 피드백을 통해 
+                        내용의 질을 높였습니다.
+                        <br><br>
+                        소설 형식 에세이부터 사회 비평, 심도 있는 콘텐츠 리뷰, 
+                        다양한 정보를 전하는 기사까지.
+                        리뷰 형식을 다채롭게 변주하여 순환을 이야기한 11개의 기사와 함께 
+                        어째서적은 필환경 시대를 나아가보려 합니다. 
+
+                        <br><br>
+                        <h5>목차</h5>
+                        <br>
+                        <span class="name">채다정</span> 오늘의 환경이야<br>
+                        <span class="name">이하은</span> 순환 안에 존재하기:줄이는 삶의 시작점에 서 있습니다<br>
+                        <span class="name">이한  </span> 순환의 의지와 인류적 가능성<br>
+                        <span class="name">권미정</span> Way to zero-waste<br>
+                        <span class="name">라선근</span> 플라스틱 제로, 우리나라도 첫 걸음 떼다<br>
+                        <span class="name">이승세</span> 선순환을 위한 사상 초유의 재판, 환경은 누구 책임?<br>
+                        <span class="name">이경 </span> 고등어는 그래도, 유영한다 <br>
+                        <span class="name">김라면</span> 비둘기와 삼각김밥<br>
+                        <span class="name">이다혜</span> 비건, 편의점에서 길을 묻다<br>
+                        <span class="name">김윤희</span> 우리는 돌이킬 수 없는 것을 돌이키려 하고 <br>
+                        <span class="name">김수현</span> 오늘도 바다는 죽어가고 있다 <br>
+
+                        <br>
+                        쪽수 : 96쪽<br>
+                        출간일 : 2021.11.23.
+                        <br><br>
+                        <a href="https://tumblbug.com/azzeonzi03?ref=discover" target="_blank">
+                            <button>텀블벅 바로가기</button>
+                        </a>
+                        <br><br><br>
+                   </li>
+                   <li class="m2">
+                        <br>
+                        <h5>어쩐지 2호 ㅣ 어쩐지, 보내기 어려웠던</h5>
+                        <br>
+                        다치는 것이 두려워 마음에 담기도 표출하기도 어려운 "화"라는 감정을, 
+                        마음과 감정을 글로써 표현하는 대표적인 수단인 편지로 풀어냈습니다. 
+                        잡지 안에서 독자는 구독을 통해 주고받은 e-mail, 
+                        광고 메일, 쪽지, 메신저, 종이에 쓰인 편지 등 형식 변주를 통해 
+                        화를 만들어낸 사회, 화를 달래는 방법, 화라는 감정에 대한 고찰등을 
+                        발견할 수 있습니다.
+                        <br><br>
+                        "어쩐지, 보내기 어려웠던"의 마지막 수신자는 독자입니다. 
+                        작가들의 편지를 받은 여러분의 마음 속에 탄생할 답장의 형태를 기대합니다.
+                        
+                        <br><br>
+                        <h5><목차></h5> 
+                        <br>
+                        <span class="name">김윤희</span> 크로니클 : 악당의 연대기 <br>
+                        <span class="name">이한</span>     우편과 89장의 시디 <br>
+                        <span class="name">조수빈</span> 화음  <br>
+                        <span class="name">권미정</span> 연의 편지 <br>
+                        <span class="name">이승세</span> 신생아 대기자의 의문 <br>
+                        <span class="name">정희성</span> My Mind Therapy Cookies <br>
+                        <span class="name">채다정</span> 얄궂은 타임라인 <br>
+                        <span class="name">라선근</span> 미안하지 않지만 미안하다고 말할게 <br>
+                        <span class="name">박효은</span> 내 안의 화를 다스리는 색 : GREEN <br>
+                        <span class="name">김수현</span> 모든 순간의 나에게 <br>
+                        <span class="name">김세현</span> 확장 <br>
+
+                        <br>
+                        
+                        쪽수 : 96쪽<br>
+                        출간일 : 2021.4.28.
+                        <br><br><br>
+                   </li>
+                   <li class="m3">
+                        <br>
+                        <h5>어쩐지 1호 ㅣ 어쩐지, 살만하더라</h5>
+                        <br>
+                        살만하다고 말하기엔 고된 세상입니다. 
+                        그럼에도 묻습니다. 요즘 살만하신가요? 
+                        우리의 일상은 사회의 고단함 속에서 단시간에 해체되고 재조립됩니다. 
+                        그럼에도 사람들은 어찌어찌 살아갑니다. 
+                        어쩐지 살만은 한 날들이 존재하기 때문이 아닐까요. 
+                        “어쩐지, 살만하더라”는 9가지 생존 체험기를 담고 있습니다. 
+                        짧게는 일주일부터 몇 달, 길게는 수년동안 몸부림쳤던 순간들을 공유합니다.
+                        
+                        <br><br>
+                        <h5><목차></h5> 
+                        <br>
+                        <span class="name">조수빈</span> My Lovey-Dovey Hobby <br>
+                        <span class="name">라선근</span> 인간이길 거부한다 <br>
+                        <span class="name">권혜민</span> Out of Zone(OOZ) <br>
+                        <span class="name">이승세</span> 대학생이 에디터로 살아남기 위해 <br>
+                        <span class="name">김수현</span> 당하는 놈, 피하는 놈, 살아남는 놈 <br>
+                        <span class="name">김세현</span> 도시 한 켠에 내 자리가 있던 가요 <br>
+                        <span class="name">김한나</span> 달이면 달마다 <br>
+                        <span class="name">최유성</span> Oh My God <br>
+                        <span class="name">채다정</span> 솔직한 척 하는 거짓말 <br>
+
+                        <br>
+
+                        쪽수 : 96쪽<br>
+                        출간일 : 2020.12.17.
+                        <br><br><br>
+                   </li>
+                   <li class="b1">
+                        <br>
+                        <h5>에세이 ㅣ 아파하지 못하는 사람들에게: 마음껏 아파할 수 있기를</h5>
+                        <br>
+                        건강치 못한 마음을 치료하기 위해 정신건강의학과에 방문하는 것은
+                        여전히 진입장벽이 높습니다. 
+                        심지어 오랜 기간 정신건강의학과에서 치료를 받고 있는 
+                        작가도 자신의 아픔을 받아들이는 것 자체를 어려워 했습니다. 
+                        여전히 많은 사람들이 버거운 인생을 지나며 
+                        마음껏 아파할 자격이 있음에도 아파하지 못하고 있습니다. 
+                        작가는 스스로 병을 받아들이지 못 했던 자신의 모습을 투영하여 
+                        아파하지 못하는 사람들을 바라보았습니다. 
+                        그리고 자신의 경험을 공유하겠다는 결심을 했습니다. 
+                        <br><br>
+                        그렇게 <아파하지 못하는 사람들에게:마음껏 아파할 수 있기를>은
+                        작가가 인생을 담아 쓰고, 어째서적이 정리하여 만들었습니다.
+                        <br><br>
+                        쪽수 : 182쪽<br>
+                        출간일 : 2021.08.30.
+                        <br><br><br>
+                   </li>
+                   <li class="b2">
+                        <br>
+                        <h5>시집 ㅣ 본 적 없는 얼굴을 하고서</h5>
+                        <br>
+                        백석의 '백'과 작가를 닮은 기린의 '린'을 합쳐 만든 '백린'이라는 이름으로 
+                        SNS에 발표한 시를 묶어 만들었습니다.
+                        시집에는 작가의 18살부터 25살 초반까지의 순간을 담았습니다.
+                        <br><br>
+                        사람들은 저마다 자신을 기억하려 노력한다고 생각합니다. 
+                        그 방식은 일기, 셀카, 브이로그도 될 수 있습니다. 
+                        권혁준 작가는 시를 통해 자신을 기억합니다. 
+                        순간을 오래 기억하고 싶어 가족과 그 외의 것들을 적어둡니다. 
+                        <br><br>
+                        쪽수 : 90쪽<br>
+                        출간일 : 2021.06.01.
+                        <br><br><br>
+                   </li>
+                </ul>
+           </div>
         </div>
         <footer>
             <div id="footer_logo">

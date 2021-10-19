@@ -1,30 +1,18 @@
 $(function(){
 
-    // 책장부분 
-
-    var shelf_w=$("#shelf_bg").width();
-    var items =$("#shelf_inner>ul");
-    var inner= ($(window).width()-shelf_w)/2;
-
-    function start(){
-        items.css({width:shelf_w});
-        items.css({transform:"translateX(-50%) scale("+(shelf_w/1612)+") "});
-        $("#flow_inner2").css({width:inner});
-    }
-    start();
-
-    $(window).resize(function(){
-
-        shelf_w=$("#shelf_bg").width();
-
-        items.css({width:shelf_w});
-        items.css({transform:"translateX(-50%) scale("+(shelf_w/1612)+")"});
-        
-        inner= ($(window).width()-shelf_w)/2;
-        
-        $("#flow_inner2").css({width:inner});
-   
-    });
+    // 책장 호버
+    $("#shelf li a").hover(
+        function(){
+            var src=$(this).find("img").attr("src");
+            src=src.replace(".png","_on.png");
+            $(this).find("img").attr("src",src);
+        },
+        function(){
+            var src=$(this).find("img").attr("src");
+            src=src.replace("_on.png",".png");
+            $(this).find("img").attr("src",src);
+        }
+    );
 
 
     // 횡스크롤
@@ -69,7 +57,25 @@ $(function(){
 
         $(window).scrollTop(dis);
 
-        console.log(dis);
+    });
+
+    // 팝업
+
+    $(".project_list button").click(function(){
+
+        $("#popup_info ul").animate({scrollTop:0},100);
+
+        $("#popup_info").show();
+        var cls=$(this).attr("class");
+        $("#popup_info li").removeClass("on");
+        $("#popup_info li."+cls).addClass("on");
+
+    });
+
+    $("#popup_close").click(function(){
+
+        $("#popup_info").hide();
+        $("#popup_info li").removeClass("on");
 
     });
 

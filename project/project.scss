@@ -75,21 +75,9 @@ $red: #B31C33;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: 0 0;
-    // background-color: darkblue;
 }
 #shelf_inner li{
     position: absolute;
-}
-#shelf_inner a:hover{
-    animation: shake 0.2s linear infinite normal;
-}
-@keyframes shake{
-    25%{
-        transform: rotate(1deg);
-    }
-    75%{
-        transform: rotate(-1deg);
-    }
 }
 #shelf_inner li:nth-child(1){
     top: 250px;
@@ -219,7 +207,11 @@ $red: #B31C33;
     height: 100vh;
 }
 #earth .project_list{
-    background-color: rgb(209, 209, 209);
+    background-color: white;
+    background: url(images/earth_cover.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 90%;
 }
 // 어쩐지
 #magazine{
@@ -333,4 +325,54 @@ p.new{
     background-color: white !important;
     color: $red !important;
     font-weight: 500;
+}
+
+// 자세히
+
+#popup_info{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #00000040;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+#popup_info ul{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 40px;
+    overflow: scroll;
+    border: 1px solid $red;
+}
+#popup_close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -280px 0 0 280px;
+    cursor: pointer;
+}
+#popup_close img{
+    width: 30px;
+}
+#popup_info li{
+    position: absolute;
+    display: none;
+    width: 420px;
+    height: 520px;
+    font-size: 14px;
+}
+#popup_info li.on{
+    display: block;
+}
+span.name{
+    font-size: 14px;
+    font-weight: 600;
 }
